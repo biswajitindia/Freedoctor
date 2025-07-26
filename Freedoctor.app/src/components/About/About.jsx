@@ -61,21 +61,22 @@ const services = [
 
 const About = () => {
   return (
-    <section className=" py-12 px-6 md:px-16 flex flex-col items-center gap-10"
+    <section className=" py-12 px-6 md:px-16 flex flex-col items-center gap-10 bg-gray-900 w-auto h-auto text-white overflow-hidden overflow-y-scroll  "
     // className="flex justify-center items-center bg-cover bg-center h-screen w-full" 
-         style={{ backgroundImage: `url(${bgImage})` }}>
+        //  style={{ backgroundImage: `url(${bgImage})` }}
+         >
       <h1 className="text-3xl md:text-4xl font-bold text-center mb-8 border-b-2 border-rose-200 inline-block pb-2">
         Our online doctors are ready to help when you are sick
       </h1>
 
-      <div className="grid w-300 h-150 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 ">
+      <div className="grid w-300 h-150 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8  ">
         {services.map((service, index) => (
           <div
             key={index}
-            className=" w-90 h-50 border border-gray-500 rounded-lg flex flex-col justify-evenly hover:shadow-"
+            className=" w-90 h-50 border border-white rounded-lg flex flex-col justify-evenly hover:shadow-"
           >
             {/* <div className="text-3xl text-orange-400 mb-4">{service.icon}</div> */}
-            <h2 className="text-2xl font-semibold text-gray-900 ">
+            <h2 className="text-2xl font-semibold text-white ">
               {service.title} <span className="text-3xl text-orange-400  ">{service.icon}</span>
             </h2>
             <p className="text-gray-600 text-sm text-xl">{service.description}</p>

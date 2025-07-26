@@ -79,7 +79,7 @@ const Home = () => {
         {cardInfo.map((card, index) => (
           <div
             key={index}
-            className="bg-blue-100 rounded-xl p-6 text-center w-100 h-40 shadow hover:shadow-lg transition"
+            className="bg-blue-100 rounded-xl p-6 text-center w-100 h-40 shadow hover:shadow-lg transition "
           >
             {card.icon}
             <h3 className="text-xl font-bold mt-4 text-blue-700">{card.title}</h3>

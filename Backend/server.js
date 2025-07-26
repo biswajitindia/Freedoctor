@@ -11,7 +11,8 @@ import cors from 'cors';
 import authRoutes from './router/authRoutes.js';
 
 dotenv.config();
-connectDB();
+// mongoconect();
+connectDB()
 
 const app = express();
 app.use(cors());
